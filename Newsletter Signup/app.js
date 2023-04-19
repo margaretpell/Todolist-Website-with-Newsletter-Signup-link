@@ -9,14 +9,14 @@ app.get("/",function(req,res){
   res.sendFile(__dirname + "/signup.html");
 });
 mailchimp.setConfig({
- apiKey: "2ee798e49ec3ab1839ddcc43873c4708-us18",
- server: "us18"
+ apiKey: " ",
+ server: " "
 });
 app.post("/",function(req,res){
   const firstName = req.body.fname;
   const lastName = req.body.lname;
   const email = req.body.email;
-  const listId = "28e8f1da31";
+  const listId = " ";
   const subscribingUser = {
  firstName: firstName,
  lastName: lastName,
@@ -47,5 +47,4 @@ app.listen(process.env.PORT||3000,function(){
 });
 
 
-// 2ee798e49ec3ab1839ddcc43873c4708-us18
- // 28e8f1da31
+
